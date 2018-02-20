@@ -1,0 +1,379 @@
+/*************************************/
+/* Redefinitions                     */
+/*************************************/
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Source Sans Pro', 'calibri', sans-serif;
+  background: #202020;
+  font-size: 12pt;
+  font-weight: 300;
+  color: #444444;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+}
+h1 {
+  font-size: 4em;
+  font-weight: 600;
+}
+h2 {
+  font-size: 2.8em;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1.8em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+h5 {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+ul {
+  padding: 0;
+  margin-top: 0;
+  list-style: none;
+}
+p {
+  margin-top: 0;
+  line-height: 180%;
+}
+/*************************************/
+/* Global                           */
+/*************************************/
+#main {
+  overflow: hidden;
+  margin: 0em auto;
+  min-width: 800px;
+  max-width: 1200px;
+}
+#container {
+  display: flex;
+}
+.bordered {
+  border-top: 6px solid #16bc49;
+}
+.hidden {
+  display: none;
+}
+.link {
+  color: #16bc49;
+  cursor: pointer;
+}
+/*************************************/
+/* Content                           */
+/*************************************/
+#content {
+  margin-left: 20px;
+  width: 880px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-negative: 1; /* IE10 */
+}
+#welcome {
+  padding: 1em 50px 1em 50px;
+  margin-bottom: 15px;
+  background: #ffffff;
+}
+#welcome h4 {
+  padding-top: 10px;
+  color: #16bc49;
+  word-wrap: break-word;
+}
+#wrapper {
+  padding: 3em 50px 3em 50px;
+  background: #ffffff;
+  flex-grow: 1;
+  min-height: 1px;
+}
+/*************************************/
+/** Product                          */
+/*************************************/
+#product h3 {
+  padding-top: 10px;
+}
+#product h4 {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: solid 1px #16bc49;
+}
+.text {
+  text-align: justify;
+  hyphens: auto;
+}
+.text .spaced {
+  letter-spacing: 0.20em;
+}
+#product-image {
+  width: 50%;
+  float: right;
+  padding: 0 0 10px 30px;
+}
+.product-error {
+  color: #d00000;
+  padding-bottom: 20px;
+}
+/*************************************/
+/** Auction                          */
+/*************************************/
+#auction .auction-section {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: solid 1px #16bc49;
+}
+#auction h5 span {
+  color: #16bc49;
+}
+#bidder {
+  word-wrap: break-word;
+}
+#offer {
+  padding: 20px 15px 0px 0px;
+  font-size: 5em;
+}
+#euro {
+  font-size: 3em;
+  color: #16bc49;
+}
+#disclaimer {
+  margin-top: 30px;
+  font-size: 0.85em;
+}
+#auction-logged h4.bid-message-ok {
+  font-weight: 300;
+  color: #16bc49;
+}
+#auction-logged h4.bid-message-ko {
+  font-weight: 300;
+  color: #d00000;
+}
+#auction-logged table {
+  margin: 0px auto;
+  padding: 20px 0px;
+  min-width: 475px;
+  width: 75%;
+}
+#auction-logged table td.left {
+  text-align: left;
+  font-size: 1.5em;
+  padding-bottom: 10px;
+}
+#auction-logged table td.right {
+  text-align: right;
+  font-size: 1.5em;
+  color: #16bc49;
+  padding-bottom: 10px;
+}
+#auction-logged input {
+  outline: 0;
+  width: 200px;
+  height: 45px;
+  border: 1px solid #16bc49;
+  padding: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #444444;
+}
+#cur-thr {
+  background-color: #ffffff;
+}
+#auction-logged button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #16bc49;
+  margin: 0px auto;
+  width: 400px;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 400;
+  cursor: pointer;
+}
+#auction-logged button:hover {
+  background: #1b9841;
+}
+#auction-logged #thr-error {
+  padding-top: 15px;
+  color: #d00000;
+  font-size: 1.2em;
+}
+/*************************************/
+/** Login - Register                 */
+/*************************************/
+.login {
+  width: 350px;
+  margin: auto;
+}
+.login h2 {
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+  border-bottom: solid 1px #16bc49;
+}
+.login form {
+  padding-top: 10px;
+}
+.login input {
+  outline: 0;
+  background: #ffffff;
+  width: 100%;
+  border: solid 1px #16bc49;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 1em;
+  color: #444444;
+}
+.login button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #16bc49;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 400;
+  cursor: pointer;
+}
+.login button:hover {
+  background: #1b9841;
+}
+.login .error {
+  color: #d00000;
+  font-size: 1.2em;
+}
+.login .message {
+  margin: 15px 0 0;
+  color: #444444;
+}
+#register form div {
+  padding-bottom: 15px;
+  font-size: 0.9em;
+}
+#register form div span {
+  color: #16bc49;
+}
+/*************************************/
+/* Header                            */
+/*************************************/
+#header {
+  background: #ffffff;
+  padding: 0px 40px;
+  margin: 20px 0px;
+  text-align: center;
+}
+#title {
+  padding: 40px 0px;
+}
+#title span {
+  color: #16bc49;
+}
+#header img {
+  float: left;
+  width: 185px;
+  cursor: pointer;
+}
+/*************************************/
+/* Fatal Error                       */
+/*************************************/
+.fatal-error {
+  background: #ffffff;
+  padding: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.fatal-error h3 {
+  color: #d00000;
+  padding-bottom: 0.5em;
+}
+.fatal-error h4 {
+  color: #444444;
+}
+/*************************************/
+/* Footer                            */
+/*************************************/
+#footer {
+  background-color: #2a2a2a;
+  padding: 10px 0em;
+  margin-top: 20px;
+  text-align: center;
+  color: #dddddd;
+}
+#footer span {
+  letter-spacing: 0.20em;
+  line-height: 2.5em;
+  text-transform: uppercase;
+  font-size: 0.80em;
+}
+#footer span.bar {
+  color: #16bc49;
+  font-weight: 400;
+}
+/*************************************/
+/* Navigation bar                    */
+/*************************************/
+#navbar {
+  position: relative;
+  background-color: #2a2a2a;
+  min-width: 200px;
+  width: 300px;
+  padding: 30px 0px;
+  -ms-flex-negative: 1; /* IE10 */
+}
+#navbar li {
+  border-bottom: 1px solid #16bc49;
+}
+#navbar li:first-child {
+  border-top: 1px solid #16bc49;
+}
+#navbar li span {
+  display: block;
+  padding: 2em 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #aaaaaa;
+  cursor: pointer;
+}
+#navbar .nb-selected span {
+  background: #16bc49;
+  color: #ffffff;
+}
+/*************************************/
+/* Loader                            */
+/*************************************/
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #16bc49;
+  border-radius: 50%;
+  margin: auto;
+  width: 90px;
+  height: 90px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
